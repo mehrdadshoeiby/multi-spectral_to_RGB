@@ -1,0 +1,32 @@
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/spyderlib/spyder.py", line 2331, in main
+    mainwindow = run_spyder(app, options, args)
+  File "/usr/lib/python3/dist-packages/spyderlib/spyder.py", line 2215, in run_spyder
+    main.setup()
+  File "/usr/lib/python3/dist-packages/spyderlib/spyder.py", line 843, in setup
+    from spyderlib.plugins.ipythonconsole import IPythonConsole
+  File "/usr/lib/python3/dist-packages/spyderlib/plugins/ipythonconsole.py", line 62, in <module>
+    required_version=SYMPY_REQVER)
+  File "/usr/lib/python3/dist-packages/spyderlib/dependencies.py", line 70, in add
+    installed_version)]
+  File "/usr/lib/python3/dist-packages/spyderlib/dependencies.py", line 32, in __init__
+    self.installed_version = programs.get_module_version(modname)
+  File "/usr/lib/python3/dist-packages/spyderlib/utils/programs.py", line 238, in get_module_version
+    mod = __import__(module_name)
+  File "/usr/local/lib/python3.5/dist-packages/sympy/__init__.py", line 60, in <module>
+    from .polys import *
+  File "/usr/local/lib/python3.5/dist-packages/sympy/polys/__init__.py", line 9, in <module>
+    from . import polyfuncs
+  File "/usr/local/lib/python3.5/dist-packages/sympy/polys/polyfuncs.py", line 9, in <module>
+    from sympy.polys.specialpolys import (
+  File "/usr/local/lib/python3.5/dist-packages/sympy/polys/specialpolys.py", line 6, in <module>
+    from sympy.functions.elementary.miscellaneous import sqrt
+  File "/usr/local/lib/python3.5/dist-packages/sympy/functions/__init__.py", line 37, in <module>
+    from sympy.functions.special.bessel import (besselj, bessely, besseli, besselk,
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 661, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 765, in get_code
+  File "<frozen importlib._bootstrap_external>", line 476, in _compile_bytecode
+ValueError: bad marshal data (unknown type code)
